@@ -1,0 +1,19 @@
+{
+    "name": "coderesource2",
+    "version": "1.0.0",
+    "description": "Code Resources",
+    "main": "ap.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node ap.js",
+        "start-server": "node ap.js"
+    },
+    "author": "Bayo Ade",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^1.19.3"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
