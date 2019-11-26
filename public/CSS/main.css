@@ -145,6 +145,37 @@ main {
     text-align: justify;
 }
 
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    padding: 3rem;
+    background: white;
+    color: #656870;
+    font-size: 16px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.footer_item {
+    display: inline-block;
+    top: 20px;
+}
+
+.footer_item a {
+    display: inline-block;
+    color: #656870;
+}
+
+.footer_item a:hover {
+    color: #5d5f68;
+    transform: .47s;
+}
+
 a {
     text-decoration: none;
 }
@@ -341,6 +372,26 @@ a {
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 50px;
     padding-bottom: 50px;
+}
+
+#email a {
+    text-decoration: none;
+    color: pink;
+    background: black;
+    padding: 10px;
+    border-radius: 97% 64% 31% 3% / 58% 10% 73% 10%;
+}
+
+#C1 {
+    color: #005798;
+}
+
+#C2 {
+    color: #00427E;
+}
+
+#C3 {
+    color: #6296CC;
 }
 
 .js-head {
@@ -694,7 +745,7 @@ a {
         position: absolute;
         width: 100%;
         height: calc(100vh - 50px);
-        background: #333;
+        background: #7E7F9A;
         top: 50px;
         left: -100%;
         transition: 0.5s;
@@ -708,6 +759,13 @@ a {
     }
     header nav ul li a {
         border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    header nav ul li a:hover {
+        color: #272932;
+    }
+    .sub-menu ul li a:hover {
+        color: #2abc68;
+        transition: .27s ease-in-out;
     }
     header nav ul li:hover ul {
         position: relative;
