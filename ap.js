@@ -11,7 +11,7 @@ app.set('views', 'views');
 
 const htmlData = require('./routes/htmlpage.js');
 const jsData = require('./routes/jspage.js')
-const indexPage = require('./routes/index.js');
+const indexPage = require('./index.js');
 const nodePage = require('./routes/nodePage.js');
 const tools = require('./routes/tools.js');
 const ruby = require('./routes/ruby.js');
