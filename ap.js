@@ -16,6 +16,7 @@ const nodePage = require('./routes/nodePage.js');
 const tools = require('./routes/tools.js');
 const ruby = require('./routes/ruby.js');
 const about = require('./routes/about.js');
+const python = require('./routes/python.js');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -27,6 +28,7 @@ app.use(nodePage);
 app.use(tools);
 app.use(ruby);
 app.use(about);
+app.use(python);
 app.use((req, res, next) => {
     res.status(404).render('404', { pageTitle: '404 - Page Not Found' });
 });
